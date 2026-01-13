@@ -52,6 +52,7 @@ header {
 .brand {
     font-size: 3rem;
     font-weight: 700;
+    margin-top: 50px;
 }
 
 .nav-links {
@@ -62,18 +63,21 @@ header {
     list-style: none;
     color: #424242;
     font-size: 18px;
+    margin-top: 50px;
 }
 
 .navbar .nav-link {
     text-decoration: none;
     color: #424242;
     font-size: 18px;
+
 }
 
 
 .banner-content {
     max-width: 862px;
     margin: 0 auto;
+    margin-top: 102px;
     text-align: center;
     flex-direction: column;
     gap: 25px;
@@ -90,7 +94,7 @@ header {
 
 .banner-content p {
     font-size: 1rem;
-    line-height: 26px;
+    line-height: 1.5;
     margin-bottom: 30px
 }
 
@@ -121,7 +125,7 @@ header {
 
 .features-content p {
     font-size: 1rem;
-    line-height: 24px;
+    line-height: 1.4;
     margin-bottom: 30px;
 
 }
@@ -142,10 +146,75 @@ header {
     gap: 20px;
 }
 
+.enjoy {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 130px;
+    display: flex;
+    gap: 145px;
+}
+
+.enjoy .enjoy-content {
+    max-width: 586px;
+}
+
+
+.enjoy h3 {
+    font-size: 2.8rem;
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+    margin-bottom: 24px;
+}
+
+.enjoy-text {
+    margin-bottom: 30px;
+}
+
+.enjoy-content h5 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #131313;
+}
+
+.enjoy p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.enjoy .box {
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    max-width: 586px;
+    max-height: 171px;
+    border-radius: 8px;
+
+}
+
+.enjoy-architect {
+    width: 100%;
+}
+
+.experience-badge {
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -92px;
+    margin-top: -100px;
+}
+
+#experience-year {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
 .facts {
     max-width: 1440px;
     margin: 0 auto;
 }
+
+/* .facts-all-things {} */
 
 .fact-container {
     display: grid;
@@ -189,14 +258,20 @@ header {
     color: #727272;
 }
 
-.title {
+.sponsorse .title {
     max-width: 542px;
     margin: 150px auto 50px;
     text-align: center;
 
 }
 
-.sponsorse-logo {
+.sponsorse .title h3 {
+    font-size: 2.8rem;
+    margin-bottom: 24px;
+}
+
+
+.sponsorse .sponsorse-logo {
     max-width: 1440px;
     margin: 50px auto;
     text-align: center;
@@ -209,12 +284,28 @@ header {
     filter: grayscale(100%);
 }
 
+.copyright {
+    max-width: 1440px;
+    padding: 38px 410px;
+    background-color: #FFF4E7;
+    margin: 130px auto;
+    text-align: center;
+    border-radius: 8px;
+}
+
 @media screen and (max-width:576px) {
 
     .navbar,
     .nav-links,
-    .features-container {
+    .features-container,
+    .enjoy {
         flex-direction: column;
+    }
+
+    .sponsorse .sponsorse-logo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .features-container {
@@ -230,6 +321,11 @@ header {
 
     }
 
+    .experience-badge {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
     .facts {
         margin-top: 50px;
     }
@@ -243,6 +339,15 @@ header {
         margin: 10px auto;
         text-align: center;
 
+    }
+
+    .copyright {
+        width: 90%;
+        padding: 38px 100px;
+        background-color: #FFF4E7;
+        margin: 130px auto;
+        text-align: center;
+        border-radius: 8px;
     }
 }
 
@@ -260,5 +365,5 @@ header {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
     }
-    
+
 }
