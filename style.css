@@ -192,7 +192,7 @@ header {
 
 }
 
-.enjoy-architect {
+.enjoy-architect img {
     width: 100%;
 }
 
@@ -302,11 +302,19 @@ header {
         flex-direction: column;
     }
 
+    .nav-links {
+        gap: 5px;
+    }
+
     .sponsorse .sponsorse-logo {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    /* .enjoy-architect {
+        width: 100%;
+    } */
 
     .features-container {
         margin: 0 auto;
@@ -328,6 +336,10 @@ header {
 
     .facts {
         margin-top: 50px;
+    }
+
+    .facts-content {
+        margin-left: 10px;
     }
 
     .fact-container {
@@ -353,17 +365,45 @@ header {
 
 @media screen and (min-width:576px) and (max-width:992px) {
 
-    .features-container {
+    .features-container,
+    .enjoy {
         flex-direction: column;
 
     }
 
+    .enjoy-content {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .experience-badge {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .sponsorse .sponsorse-logo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .facts-content {
+        margin-left: 20px;
+    }
 
     .fact-container,
     .sponsorse-logo {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
+    }
+
+    .copyright {
+        width: 90%;
+        padding: 38px 100px;
+        background-color: #FFF4E7;
+        margin: 130px auto;
+        text-align: center;
+        border-radius: 8px;
     }
 
 }
